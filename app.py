@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    lifespan=lifespan, docs_url="/", root_path=os.getenv("TFY_SERVICE_ROOT_PATH")
+    lifespan=lifespan, root_path=os.getenv("TFY_SERVICE_ROOT_PATH")
 )
 
 
